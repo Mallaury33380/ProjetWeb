@@ -1,0 +1,875 @@
+/*animation*/
+@keyframes Jeux {
+	0% {
+		opacity:0;
+    }
+
+    100% {
+		opacity:1;
+    }
+}
+@keyframes hoverJeux {
+	0% {
+		transform: translateX(0vw);
+		filter:blur(0vw);
+    }
+
+    100% {
+		transform: translateX(2vw) rotate(1deg);
+		filter:blur(0.1vw);
+    }
+}
+@keyframes hoverItem {
+	0% {
+		transform: translateX(0vw);
+		filter:blur(0vw);
+    }
+
+    100% {
+		transform: translateX(0.5vw);
+		filter:blur(0.05vw);
+		text-decoration-color: red;
+    }
+}
+@keyframes ajoutPanier {
+	0% {
+		opacity:0;
+    }
+
+    100% {
+		opacity:1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Body*/
+.body
+{
+	background:url("../images/fonds/page/fond.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-family:trebuchet, helvetica, sans-serif;
+	width:80%;
+	
+	margin: 0 auto 0 auto;
+}
+
+
+/* Header*/
+#header
+{	
+	height:6.5vw;
+	margin: 0 auto 0 auto;
+	border: 0.1vw solid black;
+	display:flex;
+	background-color:white;
+}
+#home a{
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/accueil.png");
+	background-size:cover;
+}
+#home a:hover{
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/accueil_hover.png");
+	background-size:cover;
+}
+#home a:active{
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/accueil_active.png");
+	background-size:cover;
+}
+#banniere
+{
+	width:100%;
+	background:url("../images/fonds/header/banniere.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#panier a
+{
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/panier.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#panier a:hover
+{
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/panier_hover.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#panier a:active
+{
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/panier_active.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#identification a
+{
+	
+		display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/moncompte.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#identification a:hover
+{
+	
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/moncompte_hover.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#identification a:active
+{
+	
+	display:flex;
+	height:6.5vw;
+	width:6.5vw;
+	background:url("../images/logo/moncompte_active.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+
+
+
+/*Corps de page*/
+.page
+{
+	background-color: rgb(238, 238, 238);
+	display:flex;
+	width:100%;
+}
+
+
+/*Menu*/
+#menus
+{
+	border-left: 0.1vw solid black;
+	border-right: 0.1vw solid black;
+	border-bottom: 0.1vw solid black;
+}
+#menu
+{
+	width:15vw;
+	font-family: "Trebuchet MS", Verdana, Geneva, Arial;
+	text-align: center,left;
+	
+}
+#menu h3
+{
+	font: 2vw Trebuchet;
+	font-weight:bold;
+}
+.item
+{
+	display:flex;
+	font: 400 1.3vw Trebuchet;
+	text-align: left;
+}
+.item:hover
+{
+	animation:hoverItem 1s;
+	animation-fill-mode: forwards;
+}
+.item img
+{
+	width:20%;
+	padding:10% 10% 10% 10%;
+}
+.item a
+{
+	width:100%;
+	margin:auto 0 auto 0;
+}
+
+.nouveautes
+{
+	border: 2 px solid black;
+}
+
+/*Mon_compte*/
+#mon_compte
+{
+	margin-left: 28vw;
+}
+#mon_compte h1
+{
+	font: 5vw Trebuchet;
+	color:black;
+}
+#profil
+{
+	margin-left: 23vw;
+	text-align: left;
+}
+#profil h2
+{
+	font: 3vw Trebuchet;
+	color:rgb(50,50,50);
+	margin-left:10vw;
+}
+#profil table
+{
+	margin-left:8vw;
+	border: 0.1rem solid #ccc;
+}
+#profil th
+{
+	padding: 0 3vw 0 0;
+}
+#commandes
+{
+	margin: 5vw 0 0 27vw;
+}
+#commandes h2
+{
+	font: 3vw Trebuchet;
+	color:rgb(50,50,50);
+	margin-left:2vw;
+}
+#commandes a
+{
+	font: 1.5vw Trebuchet;
+	color:rgb(53, 1, 23);
+}
+#articleANoter
+{
+	margin: 5vw 0 0 12vw;
+}
+#articleANoter h2 
+{
+	font: 3vw Trebuchet;
+	color:rgb(50,50,50);
+	margin-left:2vw;
+}
+
+/*detailsCommandes*/
+#detailsCommandes
+{
+	margin: 0 0 0 12vw;
+}
+#detailsCommandes h1
+{
+	margin-left: 11vw;
+	font: 3vw Trebuchet;
+	color:black;
+}
+
+
+/*footer*/
+#footer
+{
+	margin: 0 auto 0 auto;
+	border: 0.1vw solid black;
+	display:flex;
+	background-color:rgb(54,54,54);
+	color:rgb(250,250,250);
+	font: 2vw Trebuchet;
+	text-align: center;
+}
+#footer a
+{
+		color:rgb(250,250,250);
+
+}
+#accueil
+{
+	width:100%;
+	margin:auto 0 auto 0;
+	color:rgb(250,250,250);
+}
+#contact
+{
+	width:100%;
+	margin:auto 0 auto 0;
+	color:rgb(250,250,250);
+	
+}
+#equipe
+{
+	width:100%;
+	margin:auto 0 auto 0;
+	color:rgb(250,250,250);
+}
+
+
+
+/*inscriptionConnexion*/
+#inscriptionImage
+{
+	padding: 2vw 0 2vw 20vw;
+	width: 40vw;
+	height: 13vw;
+}
+#inscription
+{
+	width:60%;
+	padding-left: 20vw;
+	font: 1.4vw Trebuchet;
+}
+#inscription tr 
+{
+	text-align:left;
+	margin: 0 auto 0 auto;
+	font: 1.4vw Trebuchet;
+	
+}
+#inscription input
+{
+	height: 3vw;
+}
+#inscription tr th input
+{
+	font: 1.4vw Trebuchet;
+}
+
+#connexion 
+{
+	margin: 50px auto 0 auto;
+	padding: 0 0 50px 0;
+	width:60%;
+	text-align:center;
+	
+	font: 1.4vw Trebuchet;
+}
+#bouttonConnexion
+{
+	padding-left: 5vw;
+}
+#identifiants
+{
+	padding-top: 10vw;
+	padding-bottom: 10vw;
+	padding-left: 3vw;
+}
+
+/*Jeux*/
+#jeu 
+{
+	padding: 10% 10% 5% 10%;
+	margin: 0 auto 0 auto;
+}
+
+#jeu img
+{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*Page contactez*/
+#contactez
+{
+	width: 62.9vw;
+	font: 1vw Arial;
+}
+#contactez h1
+{
+	background-color: #0a3474;
+    height: auto;
+	min-height: 5rem;
+	width:100%;
+	color: blanchedalmond;
+	text-align: left;
+	padding: 1vw 0 0 1vw;
+}
+#text
+{
+	padding-left: 5vw;
+}
+#text h4
+{
+	width: 100%;
+	color: #0a3474;
+	font-weight: 700;
+	font-size: 1.6rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border-bottom: 0.1rem solid #ccc;
+	padding-bottom: 2rem;
+	text-align: left;
+	padding-right: 0;
+	display: block;
+}
+
+#questionnaire
+{
+	text-align: center;
+
+
+}
+.champquestionnaire
+{
+	width:40%;
+	margin-top:1vw;
+	text-rendering: auto;
+	text-align: center;
+    color: -internal-light-dark-color(black, white);
+    font: 400 1.3vw Trebuchet;
+}
+.message
+{
+	width:40%;
+	height: 5vw;
+	margin-top:1vw;
+	text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+	font: 400 1.3vw Trebuchet;
+}
+#submit
+{
+	font: 400 1.3vw Trebuchet;
+}
+
+
+/*Page equipe*/
+#equipe
+{
+	width: 80vw;
+	height: 100%;
+}
+#equipe img
+{
+	width:20vw;
+	height:25vw;
+}
+#equipe h1
+{
+	background-color: #0a3474;
+    height: auto;
+	min-height: 5rem;
+	width:100%;
+	color: blanchedalmond;
+	font: 3vw Trebuchet;
+	padding-top: 1vw;
+	
+}
+#equipe h4
+{
+	font: 2vw didone;
+
+}
+#equipe p
+{
+	
+	color: #0a3474;
+	margin-top:1vw;
+	text-rendering: auto;
+	text-align: center;
+    color: -internal-light-dark-color(black, white);
+    font: 400 1.4vw Trebuchet;
+}
+#equipe div
+{
+	text-align:center;
+}
+
+
+/*Page categorie*/
+#pageCategorie
+{
+	width: 100%;
+}
+
+
+
+
+/*Affichage des jeux*/
+.jeux
+{
+	
+	margin: 2vw auto 2vw auto;
+	padding-left: 17vw;
+	
+}
+.jeux img
+{
+	width:20vw;
+	height:29vw;
+	border: 0.1vw solid #ccc;
+	animation:Jeux 1s;
+	animation-fill-mode: forwards;
+}
+.jeux img:hover
+{
+	animation:hoverJeux 1s;
+	animation-fill-mode: forwards;
+}
+.jeuxGrille
+{
+	
+	margin: 2vw 1vw 2vw 7vw;
+	
+}
+.jeuxGrille img
+{
+	width:20vw;
+	height:29vw;
+	border: 0.1rem solid #ccc;
+}
+
+
+
+/*Gestion des pages d'articles*/
+#gestionPage
+{
+	font: 1.7vw Trebuchet;
+	margin-left: 16.5vw;
+	width: 10vw;
+}
+
+#gestionPage div
+{
+	margin: 0 0 1vw 0;
+	display: flex;
+}
+#gestionPage input
+{
+    font: 1.7vw Trebuchet;
+}
+
+
+
+/*affichage panier*/
+#pagePanier
+{
+	margin: 0 auto 0 auto;
+}
+#articlePanier
+{
+	margin: 0 5vw 0 0;
+}
+#articlePanier div
+{
+	padding: 0vw 0vw 0 0;
+}
+.article
+{
+	margin: 2vw 1vw 2vw 7vw;
+}
+.article img
+{
+	width:20vw;
+	height:29vw;
+	border: 0.1vw solid #ccc;
+}
+.article div
+{
+	margin-left: 2vw;
+}
+.article form
+{
+	padding: 1.5vw 0 0 0;
+}
+.article input,p
+{
+	
+	
+	font: 1.7vw Trebuchet;
+}
+#validationPanier
+{
+	margin: 0 0 1vw 0;
+	padding: 0 0 0 10vw;
+	font: 1.7vw Trebuchet;
+}
+#validationPanier input
+{
+	font: 1.7vw Trebuchet;
+	height: 3vw;
+	width: 10vw;
+}
+#supprimer input
+{
+	height: 3vw;
+	width: 10vw;
+}
+
+/*Ajout au panier*/
+#ajoutPanier
+{
+	display: flex;
+	animation:ajoutPanier 1s;
+	animation-fill-mode: forwards;
+}
+#ajoutPanier img
+{
+	width:30vw;
+	height:43.5vw;
+	border: 0.1vw solid #ccc;
+}
+#nombreProduits
+{
+	padding: 1vw 0 0 15vw;
+	font: 1.4vw Trebuchet;
+}
+#nombre
+{
+	width: 3vw;
+	font: 1.4vw Trebuchet;
+	text-align: right;
+}
+#ajout
+{
+	font: 1.4vw Trebuchet;
+}
+
+/*Commentaire*/
+#commentaire
+{
+	padding-left: 10%;
+}
+#donnerappreciation
+{
+	font: 1.4vw Trebuchet;
+}
+#donnerappreciation label
+{
+	margin: 0 1vw 0 1vw;
+}
+#donnerappreciation input
+{
+	height: 2vw;
+	width:6vw;
+}
+#donnerappreciation textarea
+{
+	margin: 1vw 1vw 0 0;
+	height: 2vw;
+	width:15vw;
+}
+
+
+
+/*Page administration*/
+#nouvelleCategorie
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+	width: 100%;
+	margin: 2vw 20vw 0 20vw;
+}
+#nouvelleCategorie h2
+{
+	margin: 0 0 1vw 10vw;
+}
+#nouvelleCategorie input
+{
+	font: 1vw Trebuchet;
+	color:rgb(50,50,50);
+	margin: 0 0.5vw 0 0.5vw;
+}
+#nouvelleJeu
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+	width: 100%;
+	margin: 3vw 0 5vw 0;
+}
+#nouvelleJeu h2
+{
+	margin: 0 0 1vw 30vw;
+}
+#nouvelleJeu form
+{
+	margin: 0 0 0 10vw;
+}
+#nouvelleJeu label
+{
+	font: 1.4vw Trebuchet;
+}
+#nouvelleJeu input
+{
+	font: 1.4vw Trebuchet;
+}
+#nouveauLigne
+{
+	display: flex;
+	margin-bottom: 1vw;
+}
+#afficherMessage
+{
+	padding-left: 17vw;
+}
+#afficherMessage table
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+	border: 0.1rem solid #ccc;
+}
+#afficherMessage th
+{
+	padding: 0 3vw 0 0;
+}
+#afficherMessage table textarea
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+}
+#afficherMessage form
+{
+	padding: 1vw 0 0 13.7vw;
+}
+#afficherMessage form input
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+	
+}
+
+#deconnecter
+{
+	padding:5vw 0 3vw 15vw;
+}
+#deconnecter input
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+
+}
+
+
+/*Outils de tri et de filtrage*/
+#filtre
+{
+	padding-bottom: 1vw;
+}
+#filtre form
+{
+	width:100%;
+	height: 5vw;
+}
+#filtre form div input
+{
+	height: 3vw;
+	font: 1.4vw Trebuchet;
+}
+#filtre p
+{
+	font: 1.4vw Trebuchet;
+	color:rgb(50,50,50);
+}
+#valeurfiltre
+{
+	margin: 0 0 0 0.5vw;
+	font: 1.4vw Trebuchet;
+}
+#valeurfiltre input
+{
+	width: 4vw;
+	height: 3vw;
+	margin: 1.5vw 0 0 0.2vw ;
+	
+}
+#datefiltre
+{
+	margin: 0 0 0 0.5vw;
+}
+#datefiltre p
+{
+	width: 4vw;
+}
+#datefiltre input
+{
+	width: 12vw;
+	height: 3vw;
+	margin: 1.5vw 0 0 0.2vw ;
+	
+}
+#submitfiltre
+{
+	margin: 1.7vw 0.5vw 0 0.5vw;
+}
+
+
+#tri
+{
+	display: flex;
+	margin-bottom: 5vw;
+}
+#tri div 
+{
+	margin: 0 0.5vw 0 0.5vw;
+	
+	height: 3vw;
+	padding-top: 0.2vw;
+}
+#tri a img
+{
+	height: 1vw;
+	width: 1vw;
+}
+#affichageTri img
+{
+	padding-top: 2vw;
+}
+
+/*titre page index*/
+#Titre h1
+{
+	font: 5vw Trebuchet;
+	color:rgb(50,50,50);
+}
+
+
+/*Paiement*/
+#paiement
+{
+}
+#paiement img
+{
+	margin-left: 4vw;
+	width: 15vw;
+	height: 20vw;
+}
+#paiement h2
+{
+	font: 3vw Trebuchet;
+	color:rgb(50,50,50);
+	margin-left:28vw;
+}
+#paiement form 
+{
+	margin: 0 0 2vw 18vw;
+	font: 1.7vw Trebuchet;
+	color:rgb(50,50,50);
+	text-align:left;
+}
+#paiement input
+{
+	font: 1.7vw Trebuchet;
+	color:rgb(50,50,50);
+
+}
